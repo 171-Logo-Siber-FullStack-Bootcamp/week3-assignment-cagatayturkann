@@ -1,11 +1,11 @@
 <h2>React Native App Example</h2>
 
 <h3>Application Images</h3>
-<img src="https://i.ibb.co/ZgJPM3C/login.jpg" alt="login" >
-<img src="https://i.ibb.co/LvVdcwt/register.jpg" alt="register" >
-<img src="https://i.ibb.co/wKxkTdW/users.jpg" alt="users" >
-<img src="https://i.ibb.co/wLS9gQ7/todos.jpg" alt="todos" >
-<img src="https://i.ibb.co/xGNLxJc/comments.jpg" alt="comments" >
+<img src="https://i.ibb.co/ZgJPM3C/login.jpg" alt="login" width=50% heigh=50%>
+<img src="https://i.ibb.co/LvVdcwt/register.jpg" alt="register" width=50% heigh=50%>
+<img src="https://i.ibb.co/wKxkTdW/users.jpg" alt="users" width=50% heigh=50%>
+<img src="https://i.ibb.co/wLS9gQ7/todos.jpg" alt="todos" width=50% heigh=50%>
+<img src="https://i.ibb.co/xGNLxJc/comments.jpg" alt="comments" width=50% heigh=50%>
 
 <p>I developed a React Native App using jsonplaceholder mock api. This app includes 5 screen: Login, Register, Users, Todos and Comments</p>
 <p>Used Technologies</p>
