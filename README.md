@@ -1,6 +1,29 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7007937&assignment_repo_type=AssignmentRepo)
-# 3. Week - React Native App
+<h2>React Native App Example</h2>
 
-- Login ve Menu kısımlarının bulanacağı React Native App oluşturulacak
-- JSONPlaceholder API ve axios kullanarak postlar listelenecek
-- Son tarih: 20.02.2022 14:00
+<h3>Application Images</h3>
+<img src="https://i.ibb.co/ZgJPM3C/login.jpg" alt="login" width=300 height=400>
+<img src="https://i.ibb.co/LvVdcwt/register.jpg" alt="register" width=300 height=400>
+<img src="https://i.ibb.co/wKxkTdW/users.jpg" alt="users" width=300 height=400>
+<img src="https://i.ibb.co/wLS9gQ7/todos.jpg" alt="todos" width=300 height=400>
+<img src="https://i.ibb.co/xGNLxJc/comments.jpg" alt="comments" width=300 height=400>
+
+<p>I developed a React Native App using jsonplaceholder mock api. This app includes 5 screen: Login, Register, Users, Todos and Comments</p>
+<p>Used Technologies</p>
+<ul>
+<li>React Native</li>
+<li>Axios</li>
+<li>FireBase</li>
+</ul>
+
+<h3>Installation</h3>
+<ol>
+<li>First clone the repository
+<code> git clone https://github.com/171-Logo-Siber-FullStack-Bootcamp/week3-assignment-cagatayturkann.git</code></li>
+<li>Install all the dependencies
+<code>cd folderName</code>
+<code>npm install</code>
+</li>
+<li>Start the application
+<code>expo start</code>
+</li>
+</ol>
