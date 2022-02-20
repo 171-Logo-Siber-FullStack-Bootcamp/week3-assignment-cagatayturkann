@@ -31,6 +31,7 @@ function Login({ navigation }) {
       })
       .catch((err) => {
         console.log(err);
+        alert(err.message)
       });
   };
 
@@ -50,7 +51,7 @@ function Login({ navigation }) {
           onChangeText={onChangePassword}
           value={password}
           placeholder="Enter Password"
-          keyboardType="numeric"
+          secureTextEntry = {true}
         />
       </SafeAreaView>
       <View style={styles.buttonContainer}>

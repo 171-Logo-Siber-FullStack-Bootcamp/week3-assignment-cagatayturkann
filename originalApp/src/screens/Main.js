@@ -7,15 +7,15 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import Todos from "./Todos";
 import Comments from "./Comments";
 import Users from "./Users";
-// import Home from "./Home";
+import Home from "./Home";
 
-// function HomeScreen() {
-//   return (
-//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-//       <Home></Home>
-//     </View>
-//   );
-// }
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Home></Home>
+    </View>
+  );
+}
 
 //Calling users, todos and comment screen inside this 3 function.
 function UsersScreen() {
@@ -71,7 +71,7 @@ function Tabs() {
         tabBarInactiveTintColor: "gray",
       })}
     >
-      {/* <Tab.Screen
+      <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
@@ -85,7 +85,7 @@ function Tabs() {
           },
           headerTitleAlign: "center",
         }}
-      /> */}
+      />
       <Tab.Screen
         name="Users"
         component={UsersScreen}

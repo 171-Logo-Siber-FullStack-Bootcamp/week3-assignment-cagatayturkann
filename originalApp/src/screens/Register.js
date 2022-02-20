@@ -27,6 +27,7 @@ function Register({ navigation }) {
           navigation.navigate('Home')
         } else {
           console.info(`Registiration Failed For: ${uc.user.email}`)
+          alert("Registiration Failed! Please try again.")
         }
       })
       .catch((err) => {
@@ -52,7 +53,7 @@ function Register({ navigation }) {
           onChangeText={onChangePassword}
           value={password}
           placeholder="Enter Password"
-          keyboardType="numeric"
+          secureTextEntry = {true}
         />
       </SafeAreaView>
       <View style={styles.buttonContainer}>
