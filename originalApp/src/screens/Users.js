@@ -11,11 +11,11 @@ import {
 import api from "../services/apis";
 
 const Users = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([]); //getting users data from an api
 
   const getUsers = async () => {
     const config = { headers: { Accept: "application/json" } };
-    const res = await api.get("/users", config);
+    const res = await api.get("/users", config); //api variable defined inside services/apis.js
     setData(res.data);
   };
 
@@ -25,7 +25,7 @@ const Users = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <FlatList
+      <FlatList //showing upcoming datas in list view
         data={data}
         renderItem={({ item }) => ( 
           <Text style={styles.item}>{item.email}</Text>
@@ -36,6 +36,8 @@ const Users = () => {
   );
 };
 
+
+//styles for elements on the screen
 const styles = StyleSheet.create({
   container: {
     flex: 1,

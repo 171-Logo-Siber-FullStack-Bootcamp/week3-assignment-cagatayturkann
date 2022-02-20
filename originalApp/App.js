@@ -11,6 +11,7 @@ import Tabs from "./src/screens/Main";
 
 const Stack = createNativeStackNavigator();
 
+//settings for navigation
 export default function App() {
   return (
     <NavigationContainer>

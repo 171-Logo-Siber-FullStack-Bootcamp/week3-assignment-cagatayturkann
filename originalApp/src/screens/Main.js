@@ -17,6 +17,7 @@ import Users from "./Users";
 //   );
 // }
 
+//Calling users, todos and comment screen inside this 3 function.
 function UsersScreen() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -43,6 +44,7 @@ function CommentsScreen() {
 
 const Tab = createBottomTabNavigator();
 
+//settings for bottom tab menu
 function Tabs() {
   return (
     <Tab.Navigator

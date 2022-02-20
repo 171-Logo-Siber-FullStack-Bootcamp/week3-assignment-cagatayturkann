@@ -20,7 +20,7 @@ function Register({ navigation }) {
 
   const registerHandler = () => {
     auth
-      .createUserWithEmailAndPassword(email,password)
+      .createUserWithEmailAndPassword(email,password) //register process with firebase
       .then((uc) => {
         if (uc.user) {
           console.info(`Registered With: ${uc.user.email}`)
@@ -36,6 +36,7 @@ function Register({ navigation }) {
       // auth.signOut().then(()=>{}).catch((err)=>{console.log(err);})
   };
 
+  //visual settings for register page
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={require("../../assets/logo.png")} />
@@ -69,6 +70,7 @@ function Register({ navigation }) {
   );
 }
 
+//styles for elements on the screen
 const styles = StyleSheet.create({
   container: {
     // paddingTop: 50,

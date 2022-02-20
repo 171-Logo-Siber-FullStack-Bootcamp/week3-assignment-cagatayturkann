@@ -10,12 +10,13 @@ import {
 } from "react-native";
 import api from "../services/apis";
 
-const Comments = () => {
+
+const Comments = () => { //getting comments data from an api
   const [data, setData] = useState([]);
 
   const getComments = async () => {
     const config = { headers: { Accept: "application/json" } };
-    const res = await api.get("/comments", config);
+    const res = await api.get("/comments", config); //api variable defined inside services/apis.js
     setData(res.data);
   };
 
@@ -25,7 +26,7 @@ const Comments = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <FlatList
+      <FlatList //showing upcoming datas in list view
         data={data}
         renderItem={({ item }) => ( 
           <Text style={styles.item}>{item.body}</Text>
@@ -36,6 +37,7 @@ const Comments = () => {
   );
 };
 
+//styles for elements on the screen
 const styles = StyleSheet.create({
   container: {
     flex: 1,

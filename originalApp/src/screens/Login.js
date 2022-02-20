@@ -20,7 +20,7 @@ function Login({ navigation }) {
 
   const loginHandler = () => {
     auth
-      .signInWithEmailAndPassword(email, password)
+      .signInWithEmailAndPassword(email, password) //login process with firebase
       .then((uc) => {
         if (uc.user) {
           console.info(`Logined With: ${uc.user.email}`)
@@ -34,6 +34,7 @@ function Login({ navigation }) {
       });
   };
 
+  //visual settings for home page
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={require("../../assets/logo.png")} />
@@ -69,6 +70,7 @@ function Login({ navigation }) {
   );
 }
 
+//styles for elements on the screen
 const styles = StyleSheet.create({
   container: {
     // paddingTop: 50,
